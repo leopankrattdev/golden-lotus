@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Golden Lotus Hotel — a relaxed Mediterranean stay in Kemer, Antalya.">
+  <title>Golden Lotus Hotel | Kemer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home"><span class="logo-symbol">✳</span><span>GOLDEN LOTUS<small>HOTEL · KEMER</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="#about" data-i18n="navAbout">The hotel</a>
+      <a href="#experience" data-i18n="navExperience">Experience</a>
+      <a href="#rooms" data-i18n="navRooms">Rooms</a>
+      <a href="#location" data-i18n="navLocation">Location</a>
+    </nav>
+    <div class="header-right">
+      <!-- Custom Language Select -->
+      <div class="lang-select" id="langSelect">
+        <button type="button" class="lang-select-btn" id="langSelectBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang-flag" id="currentFlag">GB</span>
+          <span class="lang-code" id="currentCode">EN</span>
+          <span class="lang-arrow">▾</span>
+        </button>
+        <ul class="lang-dropdown" id="langDropdown" role="listbox">
+          <li data-lang="en" role="option" class="active"><span class="lang-flag">GB</span><span>EN</span></li>
+          <li data-lang="tr" role="option"><span class="lang-flag">TR</span><span>TR</span></li>
+          <li data-lang="ru" role="option"><span class="lang-flag">RU</span><span>RU</span></li>
+          <li data-lang="de" role="option"><span class="lang-flag">DE</span><span>DE</span></li>
+        </ul>
+      </div>
+
+      <button class="btn btn-dark header-book open-booking-btn" type="button" data-i18n="book">Book now ↗</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-meta"><span>KEMER · ANTALYA · TÜRKİYE</span></div>
+      <div class="hero-inner">
+        <h1 data-i18n="heroTitle">A slower pace.<br><em>A brighter blue.</em></h1>
+        <p class="hero-desc" data-i18n="heroText">Discover the easy rhythm of the Mediterranean, right on the coast of Kemer.</p>
+        <a class="hero-link" href="#about"><span data-i18n="discover">Discover Golden Lotus</span><b>↓</b></a>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-layout">
+        <div class="about-title">
+          <p class="eyebrow" data-i18n="aboutLabel">WELCOME TO THE COAST</p>
+          <h2 class="heading" data-i18n="aboutTitle">Your place to<br><em>unwind.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p data-i18n="aboutText">Set on the seafront in the heart of Kemer, Golden Lotus is a relaxed base for days shaped by the sea, warm hospitality and the natural beauty of the Turkish Riviera. Take a swim, slow down and enjoy a holiday at your own pace.</p>
+          <a class="under-link" href="#experience"><span data-i18n="aboutLink">Explore the experience</span><b>↗</b></a>
+        </div>
+      </div>
+      <div class="about-image image-reveal"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=88" alt="Mediterranean hotel pool"></div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="experienceLabel">THE BEST OF A COASTAL HOLIDAY</p><h2 class="heading" data-i18n="experienceTitle">Simple pleasures.<br><em>Beautiful moments.</em></h2></div>
+        <p class="section-intro" data-i18n="experienceText">From the first morning swim to a quiet afternoon in the spa, make space for the moments that matter.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature feature-main">
+          <div class="feature-image"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=88" alt="Turquoise sea and sandy beach"></div>
+          <div class="feature-caption"><span>01</span><div><h3 data-i18n="featureBeach">By the sea</h3><p data-i18n="featureBeachText">Sunshine, sea air and time to do nothing at all.</p></div></div>
+        </article>
+        <article class="feature">
+          <div class="feature-image"><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1100&q=88" alt="Outdoor swimming pool"></div>
+          <div class="feature-caption"><span>02</span><div><h3 data-i18n="featurePool">Poolside days</h3><p data-i18n="featurePoolText">A refreshing pause under the sun.</p></div></div>
+        </article>
+        <article class="feature">
+          <div class="feature-image"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=88" alt="Spa wellness interior"></div>
+          <div class="feature-caption"><span>03</span><div><h3 data-i18n="featureSpa">Time to recharge</h3><p data-i18n="featureSpaText">Slow down and make room for wellbeing.</p></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stay section" id="rooms">
+      <div class="stay-image image-reveal"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1600&q=88" alt="Comfortable hotel room"></div>
+      <div class="stay-content">
+        <p class="eyebrow" data-i18n="stayLabel">ROOMS & COMFORT</p>
+        <h2 class="heading" data-i18n="stayTitle">Settle in.<br><em>Feel at ease.</em></h2>
+        <p class="body-copy" data-i18n="stayText">A welcoming place to return to after a day by the water. Explore the rooms, choose your dates and find the stay that suits you.</p>
+        <button class="btn btn-dark open-booking-btn" type="button"><span data-i18n="checkRooms">View rooms & availability</span><b>↗</b></button>
+        <div class="stay-note"><span data-i18n="stayNote">ALL-INCLUSIVE HOLIDAY</span><span>·</span><span>KEMER, ANTALYA</span></div>
+      </div>
+    </section>
+
+    <section class="wellness">
+      <div class="wellness-photo"></div>
+      <div class="wellness-content">
+        <p class="eyebrow light" data-i18n="wellnessLabel">A MOMENT FOR YOURSELF</p>
+        <h2 class="heading" data-i18n="wellnessTitle">Slow down.<br><em>Feel renewed.</em></h2>
+        <p data-i18n="wellnessText">Enjoy a moment of calm in the spa with a traditional Turkish hammam, sauna and relaxing treatments.</p>
+        <a class="under-link light-link" href="https://goldenlotushotel.com/spa/" target="_blank" rel="noopener"><span data-i18n="wellnessLink">Discover spa & wellness</span><b>↗</b></a>
+      </div>
+    </section>
+
+    <section class="location section" id="location">
+      <div class="location-top">
+        <div><p class="eyebrow" data-i18n="locationLabel">THE TURQUOISE COAST</p><h2 class="heading" data-i18n="locationTitle">Kemer, close<br>to <em>the sea.</em></h2></div>
+        <div class="location-address"><strong>GOLDEN LOTUS HOTEL</strong><span>Kemer, Antalya, Türkiye</span><a class="under-link" href="https://www.google.com/maps/place/Golden+Lotus+Hotel/@36.603451,30.5610857,17z/data=!4m10!3m9!1s0x14c3b79bd81d6247:0x53cd55562305f5ab!5m3!1s2026-11-29!4m1!1i2!8m2!3d36.6034511!4d30.5659566" target="_blank" rel="noopener"><span data-i18n="directions">Get directions</span><b>↗</b></a></div>
+      </div>
+      <div class="map"><iframe title="Golden Lotus Hotel map" src="https://www.google.com/maps?q=36.6034511,30.5659566&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-bg"></div>
+      <div class="final-content"><p class="eyebrow light" data-i18n="ctaLabel">YOUR MEDITERRANEAN MOMENT</p><h2 class="heading" data-i18n="ctaTitle">Let the coast<br><em>set the pace.</em></h2><button class="btn btn-light open-booking-btn" type="button"><span data-i18n="ctaButton">Book your stay</span><b>↗</b></button></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home"><span class="logo-symbol">✳</span><span>GOLDEN LOTUS<small>HOTEL · KEMER</small></span></a>
+    <div class="footer-contact"><span>KEMER · ANTALYA · TÜRKİYE</span><a href="tel:+902422771735">+90 242 277 17 35</a><a href="https://goldenlotushotel.com/" target="_blank" rel="noopener">goldenlotushotel.com</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> GOLDEN LOTUS HOTEL</span><a href="#home" data-i18n="backTop">BACK TO TOP ↑</a><span>INDEPENDENT WEBSITE CONCEPT</span></div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog" role="dialog" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <div class="modal-header">
+        <p class="eyebrow" data-i18n="modalSub">RESERVATION</p>
+        <h3 class="heading-modal" id="modalTitle" data-i18n="modalTitle">Book your stay</h3>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkIn" data-i18n="checkInLabel">Check-in</label>
+            <input type="date" id="checkIn" required>
+          </div>
+          <div class="form-group">
+            <label for="checkOut" data-i18n="checkOutLabel">Check-out</label>
+            <input type="date" id="checkOut" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests" data-i18n="guestsLabel">Guests</label>
+            <select id="guests">
+              <option value="1" data-i18n="guest1">1 Adult</option>
+              <option value="2" selected data-i18n="guest2">2 Adults</option>
+              <option value="3" data-i18n="guest3">3 Adults</option>
+              <option value="family" data-i18n="guestFamily">Family (2 Adults + 1 Child)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="roomType" data-i18n="roomTypeLabel">Room type</label>
+            <select id="roomType">
+              <option value="standard" data-i18n="roomStandard">Standard Sea View</option>
+              <option value="land" data-i18n="roomLand">Standard Land View</option>
+              <option value="suite" data-i18n="roomSuite">Corner Suite</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="guestName" data-i18n="nameLabel">Full name</label>
+          <input type="text" id="guestName" required placeholder="John Doe">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guestEmail" data-i18n="emailLabel">Email</label>
+            <input type="email" id="guestEmail" required placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="guestPhone" data-i18n="phoneLabel">Phone / WhatsApp</label>
+            <input type="tel" id="guestPhone" required placeholder="+90 500 000 0000">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark modal-submit"><span data-i18n="submitBooking">Confirm Request</span><b>↗</b></button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
