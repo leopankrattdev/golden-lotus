@@ -89,15 +89,10 @@ span.lang-flag {
 }
 
 .logo-symbol {
-  width: 45px;
-  height: 45px;
+  width: 38px;
+  height: 38px;
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 45px;
-  font-weight: 400;
-  line-height: 1;
+  display: block;
 }
 
 .logo small {
@@ -108,10 +103,8 @@ span.lang-flag {
   font-weight: 400;
 }
 @media(max-width:700px) {
-  html { scroll-padding-top: 70px; }
-  .header { height: 70px; padding: 0 6%; }
-  .header.scrolled { height: 64px; }
+  /* ... */
   .logo { font-size: 10px; }
-  .logo-symbol { width: 32px; height: 32px; font-size: 32px; }
-  /* остальные стили мобильной версии... */
+  .logo-symbol { width: 28px; height: 28px; }
+  /* ... */
 }
